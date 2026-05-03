@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user list</title>
+</head>
+<body>
+    <h2>User list</h2>
+    <ul id="list"></ul>
+
+    <script>
+        fetch('/users')
+        .then(res => res.json())
+        .then(data =>{
+            let list = document.getElementById('list');
+            data.forEach(user =>{
+                list.innerHTML+=`
+                    <li>${user.name} - ${user.email}</li>
+                    `;
+            });
+        });
+    </script>
+</body>
+</html>

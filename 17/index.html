@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employees list</h1>
+    <ul id="list"></ul>
+
+    <script>
+        fetch('/employees')
+        .then(res => res.json())
+        .then(data =>{
+            let list = document.getElementById('list');
+            data.forEach(employee =>{
+                list.innerHTML+=
+                    `<li>
+                        <h3>${employee.name}</h3>
+                        <p>${employee.designation} - ${employee.department} - $${employee.salary}</p>
+                        <img src="${employee.image}" alt="${employee.name}" style="width:150px;height:150px;">
+                    </li>`;
+            });
+        });
+    </script>
+</body>
+</html>

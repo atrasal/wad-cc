@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Aadi",
+    "designation": "Developer",
+    "department": "IT",
+    "salary": 50000,
+    "image": "./images/aadi.jpeg"
+  },
+  {
+    "name": "Rahul",
+    "designation": "Manager",
+    "department": "HR",
+    "salary": 70000,
+    "image": "./images/rahul.jpeg"
+  },
+  {
+    "name": "Priya",
+    "designation": "Analyst",
+    "department": "Finance",
+    "salary": 60000,
+    "image": "./images/priya.jpeg"
+  }
+]

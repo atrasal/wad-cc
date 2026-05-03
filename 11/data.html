@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User data</title>
+  </head>
+  <body>
+    <h2>Registered Users</h2>
+    <ul id="list"></ul>
+    <script>
+      let users = JSON.parse(localStorage.getItem("users")) || [];
+      let list = document.getElementById("list");
+
+      users.forEach((u) => {
+        list.innerHTML += `<li>${u.name} - ${u.email}</li>`;
+      });
+    </script>
+  </body>
+</html>

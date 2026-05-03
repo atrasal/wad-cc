@@ -1,0 +1,32 @@
+{
+    "Pune": {
+        "temperature":32,
+        "humidity": 80,
+        "wind_speed": 10,
+        "condition": "Sunny"
+    },
+    "Mumbai": {
+        "temperature":30,
+        "humidity": 85,
+        "wind_speed": 15,
+        "condition": "Cloudy"
+    },
+    "Delhi": {
+        "temperature":35,
+        "humidity": 70,
+        "wind_speed": 20,
+        "condition": "Hot"
+    },
+    "Bangalore": {
+        "temperature":28,
+        "humidity": 75,
+        "wind_speed": 12,
+        "condition": "Rainy"
+    },
+    "Chennai": {
+        "temperature":33,
+        "humidity": 90,
+        "wind_speed": 8,
+        "condition": "Humid"
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+</head>
+<body>
+    <h2>Products</h2>
+    <ul id="list"></ul>
+
+    <script>
+        fetch('products')
+        .then(res => res.json())
+        .then(data => {
+            let list = document.getElementById('list');
+            data.forEach(product =>{
+                list.innerHTML+=`
+                    <li>${product.name} - ${product.price}<li>
+                    <img src = "${product.image}" style="width:100px;height:100px;">
+                    `;
+            });
+        });
+    </script>
+</body>
+</html>

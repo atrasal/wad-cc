@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+.card {
+    display: inline-block;
+    border: 1px solid yellow;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+}
